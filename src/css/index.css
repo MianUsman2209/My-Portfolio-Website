@@ -165,12 +165,18 @@ nav.scrolled {
 }
 
 .logo {
-    font-size: 1.8rem;
-    letter-spacing: -1px;
-    background: linear-gradient(90deg, var(--primary), var(--secondary));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 45px;
+    width: auto;
+    transition: 0.3s;
+}
+
+.logo img:hover {
+    transform: rotate(10deg) scale(1.1);
 }
 
 .nav-links {
